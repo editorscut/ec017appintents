@@ -1,12 +1,16 @@
 import SwiftUI
 import MoodModel
 
-struct MoodItemByDateView: View {
+public struct MoodItemByDate: View {
   let mood: MoodEntry
+  
+  public init(mood: MoodEntry) {
+    self.mood = mood
+  }
 }
 
-extension MoodItemByDateView {
-  var body: some View {
+extension MoodItemByDate {
+  public var body: some View {
     HStack {
       Text(mood.emoji)
         .font(.largeTitle)
@@ -30,6 +34,6 @@ extension MoodItemByDateView {
 
 #Preview {
   List {
-    MoodItemByDateView(mood: moodPreview)
+    MoodItemByDate(mood: moodPreview)
   }
 }

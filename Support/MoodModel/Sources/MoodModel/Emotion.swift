@@ -1,10 +1,10 @@
-public let emotions = Emotion.allCases
+public let emotions = Emotion.allCases.sorted {$0.rawValue < $1.rawValue}
 public let defaultEmotion = Emotion.happy
 public let minEmotion = Emotion.verySad
 public let maxEmotion = Emotion.veryHappy
 
 public enum Emotion: Int, Codable, Equatable, Sendable, CaseIterable {
-  case verySad = -2
+  case verySad
   case sad
   case ok
   case happy
@@ -13,13 +13,13 @@ public enum Emotion: Int, Codable, Equatable, Sendable, CaseIterable {
 
 extension Emotion {
   public init(value: Double) {
-    let roundedValue = Int(value.rounded(.toNearestOrAwayFromZero))
+    let roundedValue = Int(value.rounded())
     self.init(value: roundedValue)
   }
   
   public init(value: Int) {
-    let truncatedValue = min(max(value, -2), 2)
-    self = Emotion(rawValue: truncatedValue) ?? .ok
+    let truncatedValue = min(max(value, 0), 4)
+    self = Emotion(rawValue: truncatedValue) ?? .verySad
   }
   
   public var value: Int {
@@ -27,7 +27,7 @@ extension Emotion {
   }
   
   public var emoji: String {
-    return emojis[rawValue + 3]
+    return emojis[rawValue]
   }
 }
 

@@ -6,10 +6,14 @@ public class MoodEntry {
   public var emotion: Emotion
   public var activity: Activity
   public var detail: String
-  public var timestamp: Date
+  public var timestamp: Date {
+    didSet {
+      print(timestamp)
+    }
+  }
   
-  public init(emotion: Emotion = .happy,
-              activity: Activity = .none,
+  public init(emotion: Emotion = defaultEmotion,
+              activity: Activity = defaultActivity,
               detail: String = "",
               timestamp: Date = Date.now) {
     self.emotion = emotion
@@ -19,7 +23,7 @@ public class MoodEntry {
   }
   
   public init(mood: MoodEntry,
-              now: Bool = true) {
+              now: Bool = false) {
     self.emotion = mood.emotion
     self.activity = mood.activity
     self.detail = mood.detail
@@ -38,6 +42,6 @@ extension MoodEntry {
   }
   
   public var activityDescription: String {
-    activity.rawValue
+    activity.description
   }
 }

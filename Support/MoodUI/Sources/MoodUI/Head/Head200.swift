@@ -1,6 +1,6 @@
 import SwiftUI
 
-public struct Head100: View {
+public struct Head200: View {
   let emotionValue: Int
   
   public init(emotionValue: Int) {
@@ -8,10 +8,10 @@ public struct Head100: View {
   }
 }
 
-extension Head100 {
+extension Head200 {
   public var body: some View {
     Head(emotionValue: emotionValue)
-      .frame(width: 100, height: 100)
+      .frame(width: 200, height: 200)
   }
 }
 

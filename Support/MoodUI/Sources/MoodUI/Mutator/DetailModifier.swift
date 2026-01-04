@@ -2,16 +2,12 @@ import SwiftUI
 import MoodModel
 
 public struct DetailModifier: View {
-  @Binding public var mood: MoodEntry
-  @State private var detail: String {
-    didSet {
-      mood.detail = detail
-    }
-  }
+  public var mood: MoodEntry
+  @State private var detail: String 
   
-  public init(mood: Binding<MoodEntry>) {
-    self._mood = mood
-    self.detail = mood.wrappedValue.detail
+  public init(mood: MoodEntry) {
+    self.mood = mood
+    self.detail = mood.detail
   }
 }
 
@@ -22,11 +18,8 @@ extension DetailModifier {
     .multilineTextAlignment(.center)
     .textFieldStyle(.roundedBorder)
     .padding()
+    .onChange(of: detail) { _, newValue in
+      mood.detail = detail
+    }
   }
-}
-
-#Preview {
-  @Previewable
-  @State var mood = moodPreview
-  DetailModifier(mood: $mood)
 }

@@ -1,12 +1,16 @@
 import SwiftUI
 import MoodModel
 
-struct MoodDetailView: View {
+public struct MoodDetailView: View {
   let mood: MoodEntry
+  
+  public init(mood: MoodEntry) {
+    self.mood = mood
+  }
 }
 
 extension MoodDetailView {
-  var body: some View {
+  public var body: some View {
     VStack {
       Text(mood.activityDescription.description.capitalized)
         .font(.title)

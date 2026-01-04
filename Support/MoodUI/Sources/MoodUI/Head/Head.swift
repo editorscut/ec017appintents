@@ -26,5 +26,5 @@ extension Head {
 }
 
 #Preview {
-  Head(emotionValue: 0)
+  Head(emotionValue: 1)
 }

@@ -22,14 +22,14 @@ extension Mouth {
                                y: frame.midY + verticalOffset),
                       control: CGPoint(x: frame.midX,
                                        y: frame.midY + verticalOffset +
-                                       Double(emotionValue) * frame.height / 7 ))
+                                       Double(emotionValue - 2) * frame.height / 7 ))
     return path
   }
 }
 
 
 #Preview {
-  Head(emotionValue: -2)
+  Head(emotionValue: 4)
 }
 
 

@@ -1,6 +1,6 @@
 public let activityDescriptions = Activity.allCases.map(\.rawValue)
 public let activities = Activity.allCases
-public let defaultActivityDescription = Activity.none
+public let defaultActivity = Activity.none
 
 public enum Activity: String, Codable, Equatable, Sendable, CaseIterable {
   case none

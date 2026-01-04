@@ -10,11 +10,11 @@ public let moodPreview = MoodEntry(emotion: .happy,
 public let moodsPreview = {
   var moods: [MoodEntry] = []
   var details = ["Some activity", "Another activity",
-                 "Spending time doing something else",
+                 "One more thing",
                  "Helping out"]
-  for i in 0...3 {
-    moods.append(MoodEntry(emotion: emotions[i],
-                           activity: activities[i],
+  for i in 0...20 {
+    moods.append(MoodEntry(emotion: emotions[i % emotions.count],
+                           activity: activities[i % activities.count],
                            detail: details[(i % details.count)],
                            timestamp: Date.now.addingTimeInterval(-30000 * Double(i))))
   }

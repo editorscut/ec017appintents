@@ -1,20 +1,20 @@
 import SwiftUI
 import MoodModel
 
-struct AdjustableMood: View {
-  @Binding var mood: MoodEntry
+public struct AdjustableMood: View {
+  var mood: MoodEntry
   
-  public init(_ mood: Binding<MoodEntry>) {
-    self._mood = mood
+  public init(_ mood: MoodEntry) {
+    self.mood = mood
   }
 }
 
 extension AdjustableMood {
-  var body: some View {
+  public var body: some View {
     VStack {
-      EmotionSlider(mood: $mood)
-      DateAndActivityPicker(mood: $mood)
-      DetailModifier(mood: $mood)
+      EmotionSlider(mood: mood)
+      MoodDatePicker(mood: mood)
+      DetailModifier(mood: mood)
     }
   }
 }
@@ -23,5 +23,5 @@ extension AdjustableMood {
 #Preview {
   @Previewable
   @State var mood = moodPreview
-  AdjustableMood($mood)
+  AdjustableMood(mood)
 }
