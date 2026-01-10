@@ -6,11 +6,7 @@ public class MoodEntry {
   public var emotion: Emotion
   public var activity: Activity
   public var detail: String
-  public var timestamp: Date {
-    didSet {
-      print(timestamp)
-    }
-  }
+  public var timestamp: Date
   
   public init(emotion: Emotion = defaultEmotion,
               activity: Activity = defaultActivity,

@@ -12,7 +12,7 @@ public func moods(for container: ModelContainer) -> [MoodEntry] {
 public func mostRecent(_ number: Int = 1,
                        for container: ModelContainer,
                        emotionFilter: EmotionFilter = .isAny,
-                       activityFilter: ActivityFilter) -> [MoodEntry] {
+                       activityFilter: ActivityFilter = .isAny) -> [MoodEntry] {
   Array(moods(for: container)
     .filter(emotionFilter.mood)
     .filter(activityFilter.mood)

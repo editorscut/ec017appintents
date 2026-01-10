@@ -18,10 +18,8 @@ extension MoodItemByDate {
       VStack(alignment: .leading) {
         Text(mood.activityDescription)
           .font(.headline)
-        
       }
       Spacer()
-      
       VStack(alignment: .trailing) {
         Text(mood.timestamp, style: .time)
         Text(mood.detail)
