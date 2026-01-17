@@ -1,9 +1,9 @@
 public let activityDescriptions = Activity.allCases.map(\.rawValue)
 public let activities = Activity.allCases
-public let defaultActivity = Activity.none
+public let defaultActivity = Activity.noneChosen
 
 public enum Activity: String, Codable, Equatable, Sendable, CaseIterable {
-  case none
+  case noneChosen = "<   >"
   case work
   case email
   case online

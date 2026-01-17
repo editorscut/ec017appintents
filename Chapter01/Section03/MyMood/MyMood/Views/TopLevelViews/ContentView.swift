@@ -14,24 +14,22 @@ extension ContentView {
   var body: some View {
     @Bindable var navigation = navigation
     NavigationStack {
-      List {
-        MoodList(moods)
-      }
-      .toolbar {
-        MoodToolbar()
-      }
-      .navigationTitle("Moods")
-      .navigationBarTitleDisplayMode(.inline)
-      .sheet(isPresented: $navigation.isCreatingMood) {
-        navigation.navigateToRoot()
-      } content: {
-        MoodCreator()
-      }
+      MoodList(moods)
+        .toolbar {
+          MoodToolbar()
+        }
+        .navigationTitle("Moods")
+        .navigationBarTitleDisplayMode(.inline)
+        .sheet(isPresented: $navigation.isCreatingMood) {
+          navigation.navigateToRoot()
+        } content: {
+          MoodCreator()
+        }
     }
   }
 }
 
 #Preview(traits: .sampleData) {
-    ContentView()
+  ContentView()
     .environment(NavigationManager())
 }

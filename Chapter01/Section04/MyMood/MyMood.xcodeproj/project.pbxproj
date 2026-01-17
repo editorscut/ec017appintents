@@ -13,7 +13,7 @@
 
 /* Begin PBXFileReference section */
 		622E9AD52F02B1F3001532AB /* MyMood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMood.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		62DCFA482F0F0B7500BB19AF /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; name = AppIcon.icon; path = /Users/dimsum/Documents/Books/AppIntents/Code/ec017appintents/Support/AppIcon.icon; sourceTree = "<absolute>"; };
+		62DCFA482F0F0B7500BB19AF /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; name = AppIcon.icon; path = ../../../Support/AppIcon.icon; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
