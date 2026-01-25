@@ -41,3 +41,9 @@ extension MoodEntry {
     activity.description
   }
 }
+
+extension MoodEntry: Identifiable {
+  public var id: Int {
+    timestamp.hashValue
+  }
+}

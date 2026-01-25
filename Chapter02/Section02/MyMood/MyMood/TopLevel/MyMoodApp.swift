@@ -1,6 +1,7 @@
 import SwiftUI
 import SwiftData
 import MoodModel
+import AppIntents
 
 @main
 struct MyMoodApp: App {
@@ -8,7 +9,9 @@ struct MyMoodApp: App {
   @State var modelContainer: ModelContainer
   
   init() {
-    navigation = NavigationManager()
+    let navigation = NavigationManager()
+    self.navigation = navigation
+    AppDependencyManager.shared.add(dependency: navigation)
      modelContainer = {
       do {
         return try ModelContainer(for: MoodEntry.self)
