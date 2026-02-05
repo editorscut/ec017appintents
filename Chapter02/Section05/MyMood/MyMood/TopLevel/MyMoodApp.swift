@@ -13,13 +13,15 @@ struct MyMoodApp: App {
     self.navigation = navigation
     AppDependencyManager.shared.add(dependency: navigation)
     
-    modelContainer = {
+    let modelContainer = {
       do {
         return try ModelContainer(for: MoodEntry.self)
       } catch {
         fatalError("Couldn't create container for MoodEntry")
       }
     }()
+    self.modelContainer = modelContainer
+    AppDependencyManager.shared.add(dependency: modelContainer)
   }
 }
 

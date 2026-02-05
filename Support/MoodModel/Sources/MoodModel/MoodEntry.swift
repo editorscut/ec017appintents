@@ -2,7 +2,7 @@ import SwiftData
 import Foundation
 
 @Model
-public class MoodEntry {
+public final class MoodEntry {
   public var emotion: Emotion
   public var activity: Activity
   public var detail: String
@@ -47,3 +47,4 @@ extension MoodEntry: Identifiable {
     timestamp.hashValue
   }
 }
+

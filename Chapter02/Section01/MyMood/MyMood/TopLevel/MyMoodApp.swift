@@ -4,12 +4,13 @@ import MoodModel
 
 @main
 struct MyMoodApp: App {
-  @State var navigation = NavigationManager()
+  @State var navigation: NavigationManager
   @State var modelContainer: ModelContainer
   
   init() {
     navigation = NavigationManager()
-     modelContainer = {
+    
+    modelContainer = {
       do {
         return try ModelContainer(for: MoodEntry.self)
       } catch {

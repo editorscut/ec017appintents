@@ -5,14 +5,15 @@ import AppIntents
 
 @main
 struct MyMoodApp: App {
-  @State var navigation = NavigationManager()
+  @State var navigation: NavigationManager
   @State var modelContainer: ModelContainer
   
   init() {
     let navigation = NavigationManager()
     self.navigation = navigation
     AppDependencyManager.shared.add(dependency: navigation)
-     modelContainer = {
+    
+    modelContainer = {
       do {
         return try ModelContainer(for: MoodEntry.self)
       } catch {
