@@ -1,0 +1,75 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Open and Create ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Open and Create ${applicationName}",
+              "${applicationName} open and create a new mood"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Ouvre et Crée ${applicationName}",
+              "${applicationName} ouvre et crée une nouvelle humeur"
+            ]
+          }
+        }
+      }
+    },
+    "Open and Create Work ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Open and Create Work ${applicationName}",
+              "${applicationName} open and create a new work mood"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Ouvre et Crée une humeur de travail dans ${applicationName}",
+              "${applicationName} ouvre et crée une humeur de travail"
+            ]
+          }
+        }
+      }
+    },
+    "Open to the latest ${applicationName}" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringSet" : {
+            "state" : "new",
+            "values" : [
+              "Open to the latest ${applicationName}",
+              "${applicationName} open to my latest mood"
+            ]
+          }
+        },
+        "fr" : {
+          "stringSet" : {
+            "state" : "translated",
+            "values" : [
+              "Ouvre ma dernière humeur dans ${applicationName}",
+              "${applicationName} ouvre ma dernière humeur"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}

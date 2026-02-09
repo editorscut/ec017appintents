@@ -1,7 +1,156 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-
+    "Apply" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appliquer"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
+          }
+        }
+      }
+    },
+    "Create" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Créer"
+          }
+        }
+      }
+    },
+    "Duplicate" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dupliquer"
+          }
+        }
+      }
+    },
+    "Edit" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier"
+          }
+        }
+      }
+    },
+    "Moods" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Humeurs"
+          }
+        }
+      }
+    },
+    "Most recent" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus récent"
+          }
+        }
+      }
+    },
+    "New mood" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvelle humeur"
+          }
+        }
+      }
+    },
+    "Open and Create a Mood" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir et Créer une humeur "
+          }
+        }
+      }
+    },
+    "Open and Create a Work Mood" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir et Créer une humeur de travail"
+          }
+        }
+      }
+    },
+    "Open to most recent Mood" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir à la dernière humeur"
+          }
+        }
+      }
+    },
+    "This intent launches the app and navigates to the create mood sheet" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cet intent lance l’app et affiche l’écran de création d’humeur"
+          }
+        }
+      }
+    },
+    "This intent launches the app and navigates to the create mood sheet with the activity set to 'work'" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cet intent lance l’app et ouvre l’écran de création d’humeur avec l’activité définie sur “travail”"
+          }
+        }
+      }
+    },
+    "This intent launches the app and navigates to the detail page for the most recently created mood" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cet intent lance l’app et ouvre la page de détail de l’humeur la plus récemment créée"
+          }
+        }
+      }
+    },
+    "Work mood" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Humeur de travail"
+          }
+        }
+      }
+    }
   },
   "version" : "1.1"
 }
