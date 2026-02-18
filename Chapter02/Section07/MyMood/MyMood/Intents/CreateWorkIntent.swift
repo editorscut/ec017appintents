@@ -1,5 +1,4 @@
 import AppIntents
-import MoodModel
 
 struct CreateWorkIntent: TargetContentProvidingIntent {
   static let title = LocalizedStringResource("Open and Create a Work Mood")

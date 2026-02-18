@@ -1,6 +1,7 @@
 import AppIntents
+import MoodModel
 
-struct CreateWorkIntent: TargetContentProvidingIntent {
+struct CreateTopActivityIntent: AppIntent {
   static let title = LocalizedStringResource("Open and Create a Work Mood")
   
   static var description: IntentDescription? {
@@ -8,5 +9,16 @@ struct CreateWorkIntent: TargetContentProvidingIntent {
   }
   
   static let supportedModes: IntentModes = [.foreground(.immediate)]
+  
+  @Dependency
+  private var navigation: NavigationManager
+  
+  @MainActor
+  func perform() async throws -> some IntentResult {
+    navigation.navigateToRoot()
+    navigation.currentActivity = .work
+    navigation.isCreatingMood = true
+    return .result()
+  }
 }
 
